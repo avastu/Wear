@@ -1,6 +1,10 @@
 ﻿body {
 }
 
+#title {
+	margin-left: 25px;
+}
+
 .well {
     color: blue;
 }
