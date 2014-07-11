@@ -1,0 +1,16 @@
+{
+  "name": "Wear",
+  "version": "0.0.0",
+  "description": "Wear",
+  "main": "app.js",
+  "author": {
+    "name": "soccermc",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*",
+    "unirest": "^0.2.7"
+  }
+}
