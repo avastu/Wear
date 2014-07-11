@@ -1,27 +1,25 @@
-﻿.h1 {
-    position: absolute;
-    float: top;
-    font-family: 'Muli', sans-serif;
-    font-size: 28px;
-    font-color: #2B2B63;
-    margin-left: 20px;
+body {
+    background-image: url('../background.jpg');
+    background-color: #EBFBFF;
+}
+#title {
+    text-align: center;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: white;
 }
 #mainContent {
     position: relative;
     top: 10px;
 }
-#search {
-    position: absolute;
-    right: 10px;
-}
 #temp{
-    font-family: 'Muli', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 120px;
-    font-style: italic;
     font-weight: bold;
 }
 #temp-low {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
-    font-style: italic;
 }
