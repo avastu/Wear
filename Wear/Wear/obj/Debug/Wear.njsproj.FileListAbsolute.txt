@@ -1,0 +1,8 @@
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\Wear.njsprojResolveAssemblyReference.cache
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\app.js
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\bootstrap.js
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\bootstrap.min.js
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\jquery-1.11.1.js
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\index.js
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\user.js
+C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\weather.js

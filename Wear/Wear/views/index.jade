@@ -33,6 +33,8 @@ block pageContent
        Weather Display
     .col-xs-12.col-md-4.col-md-push-8
       div(ng-repeat='day in main.days')
+        #climacon
+            img(src='/PICTURES/climacons/partlycloudy.png', alt='Partly cloudy', width='100')
         #temp
           | 72°F
         #temp-low
