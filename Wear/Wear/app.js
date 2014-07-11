@@ -5,7 +5,6 @@
 
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var unirest = require('unirest');
@@ -13,6 +12,7 @@ var jade = require('jade');
 var fs = require('fs');
 
 var app = express();
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -36,7 +36,49 @@ if ('development' == app.get('env')) {
 //BEGIN API routes
 
 app.get('/', routes.index);
-app.get('/weather', weather.list);
+app.post('/search', function (req, res) {
+	var zipcode = req.body.zipcode;
+	console.log('http://api.wunderground.com/api/a19c15048b521bab/forecast/q/' + zipcode + '.json');
+    unirest.get('http://api.wunderground.com/api/a19c15048b521bab/forecast/q/' + zipcode + '.json',
+    	function (response) {
+
+        if (response.error) {
+            res.send(500, response.error);
+        }
+        //because the API can return a success error code but not recognize any face we need to
+        //check if we got a picture with a face detected.
+        else {
+        	pop = [];
+        	high = [];
+        	low = [];
+        	conditions = [];
+        	city = response.body.forecast.simpleforecast.forecastday[0].date.tz_long;
+        	//img = [];
+            pop[0] = response.body.forecast.simpleforecast.forecastday[0].pop;
+            pop[1] = response.body.forecast.simpleforecast.forecastday[1].pop;
+            high[0] = response.body.forecast.simpleforecast.forecastday[0].high.fahrenheit;
+            high[1] = response.body.forecast.simpleforecast.forecastday[1].high.fahrenheit;
+            low[0] = response.body.forecast.simpleforecast.forecastday[0].low.fahrenheit;
+            low[1] = response.body.forecast.simpleforecast.forecastday[1].low.fahrenheit;
+            conditions[0] = response.body.forecast.simpleforecast.forecastday[0].conditions;
+            conditions[1] = response.body.forecast.simpleforecast.forecastday[1].conditions;
+            //img[0] = response.body.forecast.simpleforecast.forecastday[0].icon_url;
+            //img[1] = response.body.forecast.simpleforecast.forecastday[1].icon_url;
+
+            console.log(pop);
+            console.log(high);
+            console.log(low);
+            console.log(conditions);
+            //console.log(img);
+
+            res.render('index', {pop: pop, high: high, low: low, conditions: conditions});
+
+        }
+		
+        
+    });
+	
+});
 
 //END API routes
 

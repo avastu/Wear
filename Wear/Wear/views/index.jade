@@ -24,27 +24,40 @@ block pageContent
             li
               //
                  Creates the location search form
-              form#search.navbar-form.navbar-right(role='search')
+              form#search.navbar-form.navbar-right(role='search', method="post", action="/search")
                 .form-group
-                  input.form-control(type='text', placeholder='Location')
+                  input.form-control(type='text', placeholder='Zip Code', name="zipcode")
                 button.btn.btn-default(type='submit') Find Weather
   #mainContent.container
     //
        Weather Display
     .col-xs-12.col-md-4.col-md-push-8
       div(ng-repeat='day in main.days')
+            img(src='/PICTURES/climacons/partlycloudy.png', alt='Partly cloudy', width='100')
+            #city
+                body Sunnyvale, CA
         #temp
-          | 72°F
-        #temp-low
-          | 54°F
+          | #{high[0]}°F/#{low[0]}°F
         ul
-          li {{day.feel}} {{3+3}}
-          li Rain: 0%
-          li Humidity: 50%
-          li Wind: 16mph
+          li #{conditions[0]}
+          li Chance of Rain: #{pop[0]} %
     //
        Clothing Side
-    .col-xs-12.col-md-8.col-md-pull-4
+    .col-xs-12.col-md-6.col-md-pull-4
       .well
+        #clothes
+          
+            img(src='/pictures/shirts/buttonup.png', alt='button-up', width='300') 
+            body  Button-up
+
+            img(src='/pictures/pants/jeans.png', alt='jeans', width='300') 
+            body  Jeans
+
+            img(src='/pictures/shoes/hightop.png', alt='hightop', width='300') 
+            body  Hightops
+
+            img(src='/pictures/accessories/baseballcap.png', alt='baseball cap', width='300') 
+            body  Baseball cap
+
   script(src='js/jquery-1.11.1.js')
   script(src='js/bootstrap.js')
