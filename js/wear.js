@@ -4,14 +4,12 @@ wear.config(['$routeProvider',
   function ($routeProvider) {
       $routeProvider.
         when('/today', {
-            /*templateUrl: 'views/stations.html',
-            controller: 'StationsCtrl',*/
-            activetab: 'today'
+            //day = 'today';
+            activetab: 'TODAY'
         }).
         when('/tomorrow', {
-            /*templateUrl: 'views/trains.html',
-            controller: 'TrainsCtrl',*/
-            activetab: 'trains'
+            //day = 'tomorrow';
+            activetab: 'TOMORROW'
         }).
         otherwise({
             redirectTo: '/today'
@@ -19,7 +17,9 @@ wear.config(['$routeProvider',
   }]);
 
 //Create the MainCtrl Controller...
-wear.controller("MainCtrl", ['$scope', '$http', '$route', function ($scope, $http, $route) {
-    $scope.$route = $route;
-}]);
-
+wear.controller("MainCtrl", function () {
+    this.days = [
+        {name: 'today', temp: 74, feel: 'sunny', rain: 0, humidity: 50, wind: 16},
+        {name: 'tomorrow', temp: 65, feel: 'cloudy' rain: 10, humidity: 30, wind: 20}
+    ];
+});
