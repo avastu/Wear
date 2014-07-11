@@ -36,7 +36,7 @@ if ('development' == app.get('env')) {
 //BEGIN API routes
 
 app.get('/', routes.index);
-//app.get('/users', user.list);
+app.get('/weather', weather.list);
 
 //END API routes
 
