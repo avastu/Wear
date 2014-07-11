@@ -8,6 +8,7 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var unirest = require('unirest');
 
 var weather = require('./routes/weather.js');
 
@@ -31,16 +32,14 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/users', user.list);
+//BEGIN API routes
+
+app.get('/', routes.index.list);
+app.post('/location', routes.search.locationSearch)
+//app.get('/users', user.list);
+
+//END API routes
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
-
-
-//BEGIN API routes
-
-app.get('/api/weather', weather.list);
-
-//END API routes
