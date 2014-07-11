@@ -2,13 +2,16 @@
 <html>
 <head>
     <title>Wear</title>
+    <meta charset="utf-8" />
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,800,300,600,500' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div id="header">
         <div id="title">
-            <h1>WEAR</h1>
+            <h1> — WEAR — </h1>
         </div>
 
         <div class="navbar navbar-default" role="navigation">
@@ -31,7 +34,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <!-- Creates the location search form-->
-                         <form id="search" class="navbar-form" role="search">
+                         <form id="search" class="navbar-form navbar-right" role="search">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Location">
                             </div>
@@ -41,22 +44,36 @@
                     </ul>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
 
     <div id="mainContent" class="container">
         <!-- Weather Display-->
         <div class="col-xs-12 col-md-4 col-md-push-8">
-            <div class="well"></div>
+            <div class="well">
+                <div id="temp">
+                    72°F
+                </div>
+                <div id="temp-low">
+                    54°F
+                </div>
+                <ul>
+                    <li>Sunny</li>
+                    <li>Rain: 0%</li>
+                    <li>Humidity: 50%</li>
+                    <li>Wind: 16mph</li>
+                </ul>
+            </div>
         </div>
         
-        <!-- Left Side-->
+        <!-- Clothing Side-->
         <div class="col-xs-12 col-md-8 col-md-pull-4">
             <div class="well"></div>
-        </div>
+        </div> 
     </div>
 
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/bootstrap.js"></script>
+
 </body>
 </html>

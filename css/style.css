@@ -1,21 +1,25 @@
-﻿body {
+body {
+    background-image: url('../background.jpg');
+    background-color: #EBFBFF;
 }
-
 #title {
-	margin-left: 25px;
+    text-align: center;
 }
-
-.well {
-    color: blue;
-}
-.h1 {
-    position: absolute;
-    float: top:
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: white;
 }
 #mainContent {
     position: relative;
     top: 10px;
 }
-#search {
-    float: right;
+#temp{
+    font-family: 'Raleway', sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+}
+#temp-low {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
 }
