@@ -1,0 +1,60 @@
+extends layout
+
+html(ng-app='wear')
+  head
+    title Wear
+      meta(charset='utf-8')
+      link(href='css/bootstrap.css', rel='stylesheet')
+      link(href='css/style.css', rel='stylesheet')
+      link(href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic', rel='stylesheet', type='text/css')
+      link(href='http://fonts.googleapis.com/css?family=Raleway:400,700,800,300,600,500', rel='stylesheet', type='text/css')
+      script(src='js/angular.js')
+      script(src='js/wear.js')
+  body(ng-controller='MainCtrl as main')
+    #header
+      #title
+        h1  — WEAR — 
+      .navbar.navbar-default(role='navigation')
+        .container-fluid
+          .navbar-header
+            //
+              Hamburger Button 
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          #navbar.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#/today') TODAY
+              li
+                a(href='#/tomorrow') TOMORROW
+            ul.nav.navbar-nav.navbar-right
+              li
+                //
+                   Creates the location search form
+                form#search.navbar-form.navbar-right(role='search')
+                  .form-group
+                    input.form-control(type='text', placeholder='Location')
+                  button.btn.btn-default(type='submit') Find Weather
+    #mainContent.container
+      //
+         Weather Display
+      .col-xs-12.col-md-4.col-md-push-8
+        div(ng-repeat='day in main.days')
+          #temp
+            | 72°F
+          #temp-low
+            | 54°F
+          ul
+            li {{day.feel}} {{3+3}}
+            li Rain: 0%
+            li Humidity: 50%
+            li Wind: 16mph
+      //
+         Clothing Side
+      .col-xs-12.col-md-8.col-md-pull-4
+        .well
+    script(src='js/jquery-1.11.1.js')
+    script(src='js/bootstrap.js')

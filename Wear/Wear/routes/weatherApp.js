@@ -1,5 +1,34 @@
 var weatherApp = angular.module("weatherApp", []);
 
+weatherApp.config(['$routeProvider',
+  function ($routeProvider) {
+     $routeProvider.
+        when('/', {
+          templateUrl: 'views/index.html',
+          controller: 'CurrentCtrl',
+          activetab: 'today'
+        }).
+        when('/tomorrow', {
+          templateUrl: 'views/trains.html',
+          controller: 'CurrentCtrl',
+          activetab: 'tomorrow'
+        }).
+        when('/today/:location', {
+          templateUrl: 'views/trains.html',
+          controller: 'SearchedCtrl',
+          activetab: 'trains'
+        }).
+        when('/tomorrow/:location', {
+          templateUrl: 'views/trains.html',
+          controller: 'SearchedCtrl',
+          activetab: 'trains'
+        }).
+        otherwise({
+          redirectTo: '/'
+        });
+  }]);
+
+
 weatherApp.factory("GeolocationService", ['$q', '$window', '$rootScope', function ($q, $window, $rootScope) {
   return function () {
      //Credit to Rob Hurring: http://proccli.com/2013/10/angularjs-geolocation-service

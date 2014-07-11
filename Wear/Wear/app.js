@@ -9,8 +9,8 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var unirest = require('unirest');
-
-var weather = require('./routes/weather.js');
+var jade = require('jade');
+var fs = require('fs');
 
 var app = express();
 
@@ -27,6 +27,7 @@ app.use(app.router);
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -34,8 +35,7 @@ if ('development' == app.get('env')) {
 
 //BEGIN API routes
 
-app.get('/', routes.index.list);
-app.post('/location', routes.search.locationSearch)
+app.get('/', routes.index);
 //app.get('/users', user.list);
 
 //END API routes
