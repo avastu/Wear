@@ -1,5 +1,0 @@
-﻿extends layout
-
-block pageTitle
-    h1 WEAR
-    h2 Doge
