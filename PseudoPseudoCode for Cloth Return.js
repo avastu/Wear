@@ -14,8 +14,8 @@ else if (indic === 2) {
 }
 else if(indic === 3) {
     temp = (high + low)/2;
-    getRec(temp);
-    //where getRec is the method to get the recommendation
+    whatToWear(temp);
+    //where whatToWear is the method to get the recommendation
 }
 
 function whatToWear(temp) {
