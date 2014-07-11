@@ -1,17 +1,27 @@
-﻿body {
-}
-
-.well {
-    color: blue;
-}
-.h1 {
+﻿.h1 {
     position: absolute;
-    float: top:
+    float: top;
+    font-family: 'Muli', sans-serif;
+    font-size: 28px;
+    font-color: #2B2B63;
+    margin-left: 20px;
 }
 #mainContent {
     position: relative;
     top: 10px;
 }
 #search {
-    float: right;
+    position: absolute;
+    right: 10px;
+}
+#temp{
+    font-family: 'Muli', sans-serif;
+    font-size: 120px;
+    font-style: italic;
+    font-weight: bold;
+}
+#temp-low {
+    font-family: 'Muli', sans-serif;
+    font-size: 50px;
+    font-style: italic;
 }
