@@ -36,17 +36,28 @@ block pageContent
         #climacon
             img(src='/PICTURES/climacons/partlycloudy.png', alt='Partly cloudy', width='100')
         #temp
-          | 72°F
-        #temp-low
-          | 54°F
+          | 72°F/54°F
         ul
-          li {{day.feel}} {{3+3}}
+          li Partly cloudy
           li Rain: 0%
           li Humidity: 50%
           li Wind: 16mph
     //
        Clothing Side
-    .col-xs-12.col-md-8.col-md-pull-4
+    .col-xs-12.col-md-6.col-md-pull-4
       .well
+        #clothes
+            img(src='/pictures/accessories/baseballcap.png', alt='baseball cap', width='300') 
+            body  Baseball cap
+
+            img(src='/pictures/shirts/buttonup.png', alt='button-up', width='300') 
+            body  Button-up
+
+            img(src='/pictures/pants/jeans.png', alt='jeans', width='300') 
+            body  Jeans
+
+            img(src='/pictures/shoes/hightop.png', alt='hightops', width='300') 
+            body  Hightops
+
   script(src='js/jquery-1.11.1.js')
   script(src='js/bootstrap.js')
