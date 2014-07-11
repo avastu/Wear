@@ -34,9 +34,9 @@
     <Compile Include="app.js" />
     <Compile Include="public\js\bootstrap.js" />
     <Compile Include="public\js\bootstrap.min.js" />
+    <Compile Include="public\js\checkInventory.js" />
     <Compile Include="public\js\jquery-1.11.1.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\user.js" />
     <Compile Include="routes\weather.js" />
     <Content Include="package.json" />
     <Content Include="public\css\bootstrap-theme.css" />
