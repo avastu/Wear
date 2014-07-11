@@ -5,12 +5,13 @@
 
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
+var weather = require('./routes/weather');
 var http = require('http');
 var path = require('path');
 var unirest = require('unirest');
 var jade = require('jade');
 var fs = require('fs');
+
 
 var app = express();
 
@@ -43,3 +44,4 @@ app.get('/weather', weather.list);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+

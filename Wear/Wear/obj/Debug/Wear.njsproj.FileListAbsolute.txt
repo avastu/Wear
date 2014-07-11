@@ -1,0 +1,9 @@
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\Wear.njsprojResolveAssemblyReference.cache
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\app.js
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\bootstrap.js
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\bootstrap.min.js
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\jquery-1.11.1.js
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\index.js
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\user.js
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\weather.js
+C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\checkInventory.js
