@@ -1,6 +1,8 @@
 ﻿body {
     background-image: url('../background.jpg');
     background-color: #EBFBFF;
+    font-size:20px;
+    font-family: 'Raleway', sans-serif;
 }
 #title {
     text-align: center;
@@ -12,14 +14,15 @@ h1 {
 }
 #mainContent {
     position: relative;
-    top: 10px;
+    top: 16px;
 }
 #temp{
     font-family: 'Raleway', sans-serif;
-    font-size: 120px;
+    font-size: 70px;
     font-weight: bold;
 }
-#temp-low {
+
+#clothes{
+    font-size:25px;
     font-family: 'Raleway', sans-serif;
-    font-size: 50px;
 }
