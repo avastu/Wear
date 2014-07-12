@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\Wear.njsprojResolveAssemblyReference.cache
 C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\app.js
 C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\bootstrap.js
@@ -9,6 +10,8 @@ C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\user.js
 C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\weather.js
 C:\Users\Kourosh\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\checkInventory.js
 =======
+=======
+>>>>>>> origin/master
 C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\Wear.njsprojResolveAssemblyReference.cache
 C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\app.js
 C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\bootstrap.js
@@ -17,4 +20,7 @@ C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\public\js\jquery-1.1
 C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\index.js
 C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\user.js
 C:\Users\Jennifer\Documents\GitHub\Wear\Wear\Wear\obj\Debug\routes\weather.js
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master

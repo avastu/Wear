@@ -6,9 +6,15 @@
 var express = require('express');
 var routes = require('./routes');
 <<<<<<< HEAD
+<<<<<<< HEAD
 var weather = require('./routes/weather');
 =======
 <<<<<<< HEAD
+=======
+var weather = require('./routes/weather');
+>>>>>>> d1448bad0edc31358873b7437fddfd8d322b097b
+>>>>>>> origin/master
+=======
 =======
 var weather = require('./routes/weather');
 >>>>>>> d1448bad0edc31358873b7437fddfd8d322b097b
