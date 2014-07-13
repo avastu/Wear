@@ -33,55 +33,32 @@ block pageContent
        Weather Display
     .col-xs-12.col-md-4.col-md-push-8
       div(ng-repeat='day in main.days')
-<<<<<<< HEAD
-            img(src='/PICTURES/climacons/partlycloudy.png', alt='Partly cloudy', width='100')
-            #city
-                body Sunnyvale, CA
+        img(src='#{imgtoday}', alt='#{conditionstoday}', width='100')
+        #city
+          body #{zipcode}
         #temp
-          | #{high[0]}°F/#{low[0]}°F
+          | #{hightoday}°F/#{lowtoday}°F
         ul
-          li #{conditions[0]}
-          li Chance of Rain: #{pop[0]} %
-=======
-        #climacon
-            img(src='/PICTURES/climacons/partlycloudy.png', alt='Partly cloudy', width='100')
-        #temp
-          | 72°F/54°F
-        ul
-          li Partly cloudy
-          li Rain: 0%
-          li Humidity: 50%
-          li Wind: 16mph
->>>>>>> d1448bad0edc31358873b7437fddfd8d322b097b
+          li #{conditionstoday}
+          li Chance of Rain: #{poptoday} %
+
     //
        Clothing Side
     .col-xs-12.col-md-6.col-md-pull-4
       .well
         #clothes
-<<<<<<< HEAD
           
-=======
-            img(src='/pictures/accessories/baseballcap.png', alt='baseball cap', width='300') 
-            body  Baseball cap
-
->>>>>>> d1448bad0edc31358873b7437fddfd8d322b097b
             img(src='/pictures/shirts/buttonup.png', alt='button-up', width='300') 
             body  Button-up
 
-            img(src='/pictures/pants/jeans.png', alt='jeans', width='300') 
+            img(src='/pictures/pants/jeans.png', alt='jeans', width='300')
             body  Jeans
 
-<<<<<<< HEAD
             img(src='/pictures/shoes/hightop.png', alt='hightop', width='300') 
             body  Hightops
 
             img(src='/pictures/accessories/baseballcap.png', alt='baseball cap', width='300') 
             body  Baseball cap
 
-=======
-            img(src='/pictures/shoes/hightop.png', alt='hightops', width='300') 
-            body  Hightops
-
->>>>>>> d1448bad0edc31358873b7437fddfd8d322b097b
   script(src='js/jquery-1.11.1.js')
   script(src='js/bootstrap.js')

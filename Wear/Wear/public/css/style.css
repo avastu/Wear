@@ -1,7 +1,7 @@
 ﻿body {
     background-image: url('../background.jpg');
     background-color: #EBFBFF;
-    font-size:20px;
+    font-size:30px;
     font-family: 'Raleway', sans-serif;
 }
 #title {
@@ -14,7 +14,7 @@ h1 {
 }
 #mainContent {
     position: relative;
-    top: 16px;
+    top: 30px;
 }
 #temp{
     font-family: 'Raleway', sans-serif;

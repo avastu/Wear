@@ -5,10 +5,7 @@
 
 var express = require('express');
 var routes = require('./routes');
-<<<<<<< HEAD
-=======
 var weather = require('./routes/weather');
->>>>>>> d1448bad0edc31358873b7437fddfd8d322b097b
 var http = require('http');
 var path = require('path');
 var unirest = require('unirest');
@@ -52,30 +49,30 @@ app.post('/search', function (req, res) {
         //because the API can return a success error code but not recognize any face we need to
         //check if we got a picture with a face detected.
         else {
-        	pop = [];
-        	high = [];
-        	low = [];
-        	conditions = [];
-        	city = response.body.forecast.simpleforecast.forecastday[0].date.tz_long;
-        	//img = [];
-            pop[0] = response.body.forecast.simpleforecast.forecastday[0].pop;
-            pop[1] = response.body.forecast.simpleforecast.forecastday[1].pop;
-            high[0] = response.body.forecast.simpleforecast.forecastday[0].high.fahrenheit;
-            high[1] = response.body.forecast.simpleforecast.forecastday[1].high.fahrenheit;
-            low[0] = response.body.forecast.simpleforecast.forecastday[0].low.fahrenheit;
-            low[1] = response.body.forecast.simpleforecast.forecastday[1].low.fahrenheit;
-            conditions[0] = response.body.forecast.simpleforecast.forecastday[0].conditions;
-            conditions[1] = response.body.forecast.simpleforecast.forecastday[1].conditions;
-            //img[0] = response.body.forecast.simpleforecast.forecastday[0].icon_url;
-            //img[1] = response.body.forecast.simpleforecast.forecastday[1].icon_url;
+        	// pop = [];
+        	// high = [];
+        	// low = [];
+        	// conditions = [];
+        	// //img = [];
 
-            console.log(pop);
-            console.log(high);
-            console.log(low);
-            console.log(conditions);
-            //console.log(img);
+            poptoday = response.body.forecast.simpleforecast.forecastday[0].pop;
+            poptmrw = response.body.forecast.simpleforecast.forecastday[1].pop;
+            hightoday = response.body.forecast.simpleforecast.forecastday[0].high.fahrenheit;
+            hightmrw = response.body.forecast.simpleforecast.forecastday[1].high.fahrenheit;
+            lowtoday = response.body.forecast.simpleforecast.forecastday[0].low.fahrenheit;
+            lowtmrw = response.body.forecast.simpleforecast.forecastday[1].low.fahrenheit;
+            conditionstoday = response.body.forecast.simpleforecast.forecastday[0].conditions;
+            conditionstmrw = response.body.forecast.simpleforecast.forecastday[1].conditions;
+            imgtoday = response.body.forecast.simpleforecast.forecastday[0].icon_url;
+            imgtmrw = response.body.forecast.simpleforecast.forecastday[1].icon_url;
 
-            res.render('index', {pop: pop, high: high, low: low, conditions: conditions});
+            console.log(poptoday);
+            console.log(hightoday);
+            console.log(lowtoday);
+            console.log(conditionstoday);
+            console.log(imgtoday);
+
+            res.render('index', {poptoday: poptoday, hightoday: hightoday, lowtoday: lowtoday, conditionstoday: conditionstoday, zipcode: zipcode, imgtoday:imgtoday});
 
         }
 		
