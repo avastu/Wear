@@ -38,7 +38,14 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.post('/search', function (req, res) {
+
 	var zipcode = req.body.zipcode;
+
+    //set default zipcode
+    if (zipcode === ""){
+        zipcode = '90210'
+    }
+
 	console.log('http://api.wunderground.com/api/a19c15048b521bab/forecast/q/' + zipcode + '.json');
     unirest.get('http://api.wunderground.com/api/a19c15048b521bab/forecast/q/' + zipcode + '.json',
     	function (response) {
