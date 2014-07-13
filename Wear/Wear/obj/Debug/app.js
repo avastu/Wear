@@ -5,13 +5,28 @@
 
 var express = require('express');
 var routes = require('./routes');
+<<<<<<< HEAD
+<<<<<<< HEAD
+var weather = require('./routes/weather');
+=======
 var user = require('./routes/user');
+>>>>>>> origin/master
+=======
+var user = require('./routes/user');
+>>>>>>> origin/master
 var http = require('http');
 var path = require('path');
 var unirest = require('unirest');
 var jade = require('jade');
 var fs = require('fs');
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
 var app = express();
 
 // all environments
@@ -42,4 +57,13 @@ app.get('/weather', weather.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
+<<<<<<< HEAD
+<<<<<<< HEAD
 });
+
+=======
+});
+>>>>>>> origin/master
+=======
+});
+>>>>>>> origin/master

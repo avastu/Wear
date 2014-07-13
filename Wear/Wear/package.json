@@ -8,6 +8,7 @@
     "email": ""
   },
   "dependencies": {
+    "azure": "^0.9.12",
     "express": "3.4.4",
     "jade": "*",
     "stylus": "*",
